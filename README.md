@@ -1,2 +1,1 @@
-# htmlcss
-Created with CodeSandbox
+# HTML and CSS
