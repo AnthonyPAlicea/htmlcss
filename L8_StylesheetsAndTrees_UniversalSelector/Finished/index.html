@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume of Tony Alicea</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="#contactinformation">Contact Information</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workhistory">Work History</a></li>
+                <li><a href="#mailingaddress">Mailing Address</a></li>
+                <li><a href="#blogpost">Blog Post</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="contactinformation">
+                <h2>Contact Information</h2>
+                <address>
+                    <dl>
+                        <dt>Website</dt>
+                        <dd><a href="https://www.google.com">google.com</a></dd>
+                        <dt>Phone</dt>
+                        <dd>555-555-1111</dd>
+                    </dl>
+                </address>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+            <section id="workhistory">
+                <h2>Work History</h2>
+                <ol>
+                    <li>
+                        <p>
+                            UX/UI Designer
+                            XYZ Corp
+                            3 years
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Web Developer
+                            ABC Corp
+                            5 years
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Carpet Cleaner
+                            123 Inc.
+                            2 years
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="mailingaddress">
+                <h2>Mailing Address</h2>
+                <address>
+                    111 Main St.<br />
+                    Somewhere, NY 33333
+                </address>
+            </section>
+
+            <!-- Needs occasional updating -->
+            <article id="blogpost">
+                <header>
+                    <h2>Sample Blog Post</h2>
+                    <p>by Tony Alicea</p>
+                </header>
+
+                <p>A blog post about HTML &amp; CSS!</p>
+
+                <footer>
+                    &copy; Tony Alicea
+                    <small>Blogs infrequently</small>
+                </footer>
+            </article>
+
+            <section id="contactme">
+                <h2>Contact Me</h2>
+                <form action="dosomething.html" method="POST">
+                    <p>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" />
+                    </p>
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+                    <p>
+                        <label for="whycalling">Why Contacting</label>
+                        <select name="whycontacting">
+                            <option value=jobinterview">Job Interview</option>
+                            <option value="needcontractor">Need Contractor</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" rows="3"></textarea>
+                    </p>
+                    <h3>Best Contact Time</h3>
+                    <p>
+                        <label for="contacttime1">Morning</label>
+                        <input type="radio" id="contacttime1" name="contacttime" value="morning" />
+                    </p>
+                    <p>
+                        <label for="contacttime1">Afternoon</label>
+                        <input type="radio" id="contacttime2" name="contacttime" value="afternoon" />
+                    </p>
+                    <p>
+                        <label for="contacttime1">Evening</label>
+                        <input type="radio" id="contacttime3" name="contacttime" value="evening" />
+                    </p>
+                    <p>
+                        <label for="asap">ASAP</label>
+                        <input type="checkbox" id="asap" name="asap" />
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+        <aside>
+            <blockquote>
+                <p>I <em>love</em> <strong>peanut</strong> butter!</p>
+            </blockquote>
+        </aside>
+    </body>
+</html>
