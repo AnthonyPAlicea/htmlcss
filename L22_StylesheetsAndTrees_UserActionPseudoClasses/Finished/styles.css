@@ -1,0 +1,7 @@
+a:focus, a:hover {
+    font-weight: bold;
+}
+
+input:focus, select:focus {
+    outline: 2px solid black;
+}

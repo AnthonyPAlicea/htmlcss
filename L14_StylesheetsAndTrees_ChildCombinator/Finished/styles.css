@@ -1,0 +1,4 @@
+/* Note: this will not apply to text in textboxes */
+form > p {
+    font-weight: bold;
+}

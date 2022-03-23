@@ -1,0 +1,14 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    /* font-size: 2em; */
+    font-size: 1.25em;
+    /* font-size: 50%; */ /* percentage of parent */
+    /* font-size: 3vw; */ /* percentage of viewport */
+}

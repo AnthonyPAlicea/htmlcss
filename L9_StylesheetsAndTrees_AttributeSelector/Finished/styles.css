@@ -1,0 +1,15 @@
+[lang] {
+    font-weight: bold;
+}
+
+[lang='es'] {
+    font-style: italic;
+}
+
+[class~='resume-list'] {
+    font-style: italic;
+}
+
+[class|='resume-list'] {
+    font-style: italic;
+}

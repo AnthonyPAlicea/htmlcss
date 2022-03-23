@@ -1,0 +1,8 @@
+a:where(:not(:hover)) {
+    /* Avoid specification winning the cascade */
+    text-decoration: none;
+}
+  
+nav a {
+    text-decoration: underline;
+}

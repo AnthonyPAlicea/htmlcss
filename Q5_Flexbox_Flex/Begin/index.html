@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume of Tony Alicea</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workhistory">Work History</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#mailingaddress">Mailing Address</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Resume</h1>
+            <section>
+                <h2>Tony Alicea</h2>
+                <p>
+                    Coder, UX Designer, and Instructor
+                </p>
+                <dl>
+                    <dt>Website</dt>
+                    <dd><a href="https://google.com">google.com</a></dd>
+                    <dt>Phone</dt>
+                    <dd>555-555-1111</dd>
+                    <dt>Twitter</dt>
+                    <dd><a href="https://twitter.com/AnthonyPAlicea">@anthonypalicea</a></dd>
+                    <dt>YouTube</dt>
+                    <dd><a href="https://youtube.com/tonyalicea">TonyAlicea</a></dd>
+                </dl>
+            </section>
+
+            <article id="aboutme">
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <img src="images/mypicture.png" class="my-picture" />
+                <p>
+                    Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a student in my courses.
+                </p>
+                <aside><p><small>Don't imitate, understand!</small></p></aside>
+                <footer>
+                    Contact me
+                </footer>
+            </article>
+
+            <section id="services">
+                <h2>Services</h2>
+                <ul class="resume-list">
+                    <li>Web Development</li>
+                    <li>App Development</li>
+                    <li>Training</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="resume-list">
+                    <li>
+                        HTML
+                        Markup your content with semantic HTML.
+                    </li>
+                    <li>
+                        CSS
+                        Layout your content visually for multiple devices.
+                    </li>
+                    <li>
+                        JavaScript
+                        Make your content more interactive, and build web applications.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="workhistory">
+                <h2>Work History</h2>
+                <ol class="resume-list">
+                    <li>
+                        UX/UI Designer
+                        XYZ Corp
+                        3 years
+                    </li>
+                    <li>
+                        Web Developer
+                        ABC Corp
+                        5 years
+                    </li>
+                    <li>
+                        Carpet Cleaner
+                        123 Inc.
+                        2 years
+                    </li>
+                </ol>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <img src="https://picsum.photos/id/165/200/300" alt="A field of wheat on a beautiful clear day." />
+                <img src="https://picsum.photos/id/1045/200" alt="A cloud-covered mountaintop." />
+                <img src="https://picsum.photos/id/107/250" alt="A close up view of several stalks of wheat in a wheat field." />
+                <img src="https://picsum.photos/id/147/300/170" alt="An empty ocean with mild waves." />
+                <img src="https://picsum.photos/id/306/150" alt="A flower among rocks." />
+                <img src="https://picsum.photos/id/179/175" alt="Waves crashing against boulders and cliffs on a beach." />
+                <img src="https://picsum.photos/id/258/120" alt="A flock of birds flying overhead." />
+            </section>
+
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <blockquote>
+                    <p>I love Tony's courses!</p>
+                </blockquote>
+                <blockquote>
+                    <p>Tony's courses <strong>helped me get a job.</strong></p>
+                </blockquote>
+                <blockquote class="featured">
+                    <p>I love learning about HTML &amp; CSS!</p>
+                </blockquote>
+            </section>
+
+            <section id="mailingaddress">
+                <h2>Mailing Address</h2>
+                <address>
+                    111 Main St.<br />
+                    Somewhere, NY 33333
+                </address>
+            </section>
+
+            <section id="contactme">
+                <h2>Contact Me</h2>
+                <form action="dosomething.html" method="POST">
+                    <p class="field">
+                        <label for="name" class="label-standard">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p class="field">
+                        <label for="email" class="label-standard">Email</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+                    <p class="field">
+                        <label for="whycontacting" class="label-standard">Why Contacting</label>
+                        <select id="whycontacting" name="whycontacting">
+                            <option value="jobinterview">Job Interview</option>
+                            <option value="needcontractor">Need Contractor</option>
+                        </select>
+                    </p>
+                    <p class="field">
+                        <label for="comments" class="label-standard">Comments</label>
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </p>
+                    <fieldset class="resume-fieldset">
+                        <legend>Best Contact Time</legend>
+                        <p>
+                            <label for="contacttime1">Morning</label>
+                            <input type="radio" id="contacttime1" name="contacttime" value="morning" />
+                        </p>
+                        <p>
+                            <label for="contacttime2">Afternoon</label>
+                            <input type="radio" id="contacttime2" name="contacttime" value="afternoon" />
+                        </p>
+                        <p>
+                            <label for="contacttime3">Evening</label>
+                            <input type="radio" id="contacttime3" name="contacttime" value="evening" />
+                        </p>
+                        <p>
+                            <label for="asap">ASAP</label>
+                            <input type="checkbox" id="asap" name="asap" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

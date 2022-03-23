@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    display: grid;
+}
+
+nav {
+    position: sticky;
+    inset-inline-start: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 0;
+}
+
+nav ul li {
+    margin-inline: .25rem;
+    margin-block: 0;
+    line-height: 1.5rem;
+    list-style: none;
+}
+
+main {
+    max-inline-size: clamp(700px, 50%, 900px);
+    padding-inline: 2rem;
+    padding-block: 0;
+    border-inline-start: solid 2px black;
+    border-inline-end: solid 2px black;
+    margin-inline: auto;
+    margin-block: 0;
+}
+
+.flex-header, .motto {
+    flex-basis: 100%;
+}
+
+#aboutme {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutme aside {
+    order: 10;
+}
+
+#portfolio {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#portfolio img {
+    max-inline-size: 100%;
+}
+
+#testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#testimonials blockquote {
+    border-inline: solid 1px black;
+    border-block: solid 1px black;
+    padding-inline: 0.5rem;
+    padding-block: 0;
+    margin-inline: 0;
+    margin-block: 0.5rem;
+}
+
+#testimonials h2 {
+    order: -2;
+}
+
+blockquote.featured {
+    order: -1;
+    flex: 1 0 auto;
+}
+
+.resume-fieldset {
+    border-inline: none;
+    border-block: none;
+    margin-inline: 0;
+    margin-block: 0;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+.resume-fieldset legend {
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+.label-standard {
+    display: block;
+    margin-inline: 0.125rem;
+    margin-block: 0.125rem;
+}
+
+.field {
+    margin-block-end: 1.25rem;
+}
+
+.my-picture {
+    max-inline-size: 75px;
+    margin-inline-end: 1rem;
+}

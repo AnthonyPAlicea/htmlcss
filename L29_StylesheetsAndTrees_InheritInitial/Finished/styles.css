@@ -1,0 +1,9 @@
+ul {
+    outline: solid 1px red;
+    font-weight: bold;
+}
+
+li {
+    outline: inherit;
+    font-weight: initial;
+}
