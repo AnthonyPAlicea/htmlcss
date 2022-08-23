@@ -150,9 +150,13 @@ img.anchor {
     order: -2;
 }
 
-blockquote.featured {
-    order: -1;
-    flex: 1 0 auto;
+#testimonials blockquote.featured {
+  order: -1;
+  flex: 1 0 auto;
+  background-color: black;
+  color: white;
+  margin-inline-start: 1rem;
+  font-weight: bold;
 }
 
 .resume-fieldset {
