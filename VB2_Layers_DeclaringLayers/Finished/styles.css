@@ -1,0 +1,18 @@
+@layer resume, tonyresume, customstyles.tonyresume;
+
+@import url(resume.css) layer(resume);
+
+@layer tonyresume {
+    body {
+        font-size: 40px;
+    }
+}
+
+@layer customstyles {
+    @layer tonyresume {
+        body {
+            font-size: 24px;
+        }
+    }
+}
+

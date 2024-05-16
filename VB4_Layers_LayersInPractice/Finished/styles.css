@@ -1,0 +1,25 @@
+@layer resume, customportfolio, customstyles.tonyresume;
+
+@import url(resume.css) layer(resume);
+@import url(portfolio.css) layer(customportfolio);
+
+section {
+    padding: 1.5rem;
+}
+
+@layer customstyles {
+    @layer tonyresume {
+        :root {
+            --accent-color: lightblue;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        section {
+            border: solid 1px #ccc;
+            padding: 1rem;
+        }
+    }
+}
