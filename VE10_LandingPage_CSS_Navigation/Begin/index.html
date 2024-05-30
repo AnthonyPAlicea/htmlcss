@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <p>TonyPro</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Introducing Tony Pro</h1>
+            <p>Your solution to modern design</p>
+            <a href="#features">Learn More</a>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <article>
+                <svg></svg>
+                <h3>Responsive Design</h3>
+                <p>Modern media queries.</p>
+            </article>
+            <article>
+                <svg></svg>
+                <h3>Modern Aesthetics</h3>
+                <p>Nested CSS.</p>
+            </article>
+            <article>
+                <svg></svg>
+                <h3>Easy Customization</h3>
+                <p>@layer and container queries.</p>
+            </article>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are an instructor and students passionate about semantic HTML authoring and modern CSS.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TonyPro. All rights reserved.</p>
+    </footer>
+    <script>
+        document
+          .getElementById('menu-toggle')
+          .addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('active');
+            document.getElementById('menu-toggle').ariaExpanded = document.getElementById('menu-toggle').ariaExpanded == "true" ? "false" : "true";
+          });
+    </script>
+</body>
+</html>

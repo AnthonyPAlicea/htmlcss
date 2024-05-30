@@ -1,0 +1,25 @@
+
+
+/* Color variables */
+@layer base {
+    :root {
+      --background-color: #f0f4f8;
+      --text-color: #333;
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --light-bg: #ffffff;
+      --dark-bg: #343a40;
+      --light-text: #ffffff;
+      --dark-text: #000000;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-color: #343a40;
+        --text-color: #ffffff;
+        --secondary-color: #adb5bd;
+        --light-bg: #495057;
+        --dark-bg: #000000;
+      }
+    }
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="logo">TonyPro</p>
+            <a class="menu-toggle" id="menu-toggle" aria-label="Menu button" aria-expanded="false">
+                ☰
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Introducing Tony Pro</h1>
+            <p>Your solution to modern design</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </section>
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <article class="feature">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4Zm12 12V5H7v11h10Zm-5 1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z" clip-rule="evenodd"/>
+                </svg>
+                <h3>Responsive Design</h3>
+                <p>Modern media queries.</p>
+            </article>
+            <article class="feature">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M4 18V8a1 1 0 0 1 1-1h1.5l1.707-1.707A1 1 0 0 1 8.914 5h6.172a1 1 0 0 1 .707.293L17.5 7H19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/>
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                </svg>
+                <h3>Modern Aesthetics</h3>
+                <p>Nested CSS.</p>
+            </article>
+            <article class="feature">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                </svg>
+                <h3>Easy Customization</h3>
+                <p>@layer and container queries.</p>
+            </article>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are an instructor and students passionate about semantic HTML authoring and modern CSS.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TonyPro. All rights reserved.</p>
+    </footer>
+    <script>
+        document
+          .getElementById('menu-toggle')
+          .addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('active');
+            document.getElementById('menu-toggle').ariaExpanded = document.getElementById('menu-toggle').ariaExpanded == "true" ? "false" : "true";
+          });
+    </script>
+</body>
+</html>

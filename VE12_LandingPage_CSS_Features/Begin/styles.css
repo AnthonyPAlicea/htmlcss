@@ -1,0 +1,177 @@
+/* Declare layers in order of priority */
+@layer reset, base, navigation, components;
+
+/* Reset and base styles */
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+}
+
+/* Color variables */
+@layer base {
+    :root {
+      --background-color: #f0f4f8;
+      --text-color: #333;
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --light-bg: #ffffff;
+      --dark-bg: #343a40;
+      --light-text: #ffffff;
+      --dark-text: #000000;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-color: #343a40;
+        --text-color: #ffffff;
+        --secondary-color: #adb5bd;
+        --light-bg: #495057;
+        --dark-bg: #000000;
+      }
+    }
+  }
+
+@layer base {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@layer navigation {
+  header {
+    background: var(--dark-bg);
+    color: var(--light-text);
+    padding: 1rem 0;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: calc(100% - 2rem);
+      margin: auto;
+      padding: 0 1rem;
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .menu-toggle {
+        font-size: 2rem;
+
+        @media (width > 768px) {
+          display: none;
+        }
+      }
+
+      .nav-links {
+        display: none;
+        background: var(--dark-bg);
+        text-align: right;
+        list-style: none;
+        flex-direction: column;
+
+        &.active {
+          display: flex;
+        }
+
+        @media (width <= 768px) {
+          top: 60px;
+          right: 0;
+          width: 100%;
+          position: absolute;
+        }
+
+        @media (width > 768px) {
+          display: flex;
+          flex-direction: row;
+        }
+
+        li {
+          margin: 0;
+
+          @media (width > 768px) {
+            margin-left: 1rem;
+          }
+
+          a {
+            display: block;
+            padding: 1rem;
+
+            &:hover {
+              @media (width <= 768px) {
+                background: var(--secondary-color);
+                color: var(--light-var);
+              }
+            }
+
+            @media (width <= 768px) {
+              border-bottom: 1px solid var(--secondary-color);
+              transition: background 0.3s, color 0.3s;
+            }
+
+            @media (width > 768px) {
+              padding: 0.5rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Page components */
+@layer components {
+  .hero {
+    background: url('laptop.png') no-repeat center center/cover;
+    color: var(--light-text);
+    text-align: center;
+    padding: calc(5rem + 2vh) 1rem;
+    width: 100%;
+    
+    h1 {
+      font-size: calc(2.5rem + 1vw);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: calc(1.25rem + 0.5vw);
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: var(--primary-color);
+      color: var(--light-text);
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
