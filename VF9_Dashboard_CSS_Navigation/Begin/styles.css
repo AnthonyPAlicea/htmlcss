@@ -1,0 +1,59 @@
+@layer reset {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+
+@layer base {
+    :root {
+        --color-bg: #fff;
+        --color-bg-darker: #f8f8f8;
+        --color-text: #333;
+        --color-border: #ddd;
+        --color-bg-alternate: #f5f5f5;
+        --font-primary: 'Roboto', sans-serif;
+        --font-secondary: 'Open Sans', sans-serif;
+        --font-size-base: 14px;
+        --font-size-small: 0.857rem;
+        --font-size-large: 1.714rem;
+    }
+
+    body {
+        font-family: var(--font-primary);
+        font-size: var(--font-size-base);
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+    }
+
+    main {
+        padding: 1rem;
+        background-color: var(--color-bg);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        section {
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 5px;
+            font-size: var(--font-size-base);
+        }
+    }
+}
