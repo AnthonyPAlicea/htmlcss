@@ -1,3 +1,13 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  border: black;
+  background-color: aquamarine;
+
+}
+
+.gen{
+  text-shadow: 5cap;
+  font-style: normal;
+  
+
 }
